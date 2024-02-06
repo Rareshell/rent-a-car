@@ -1,0 +1,22 @@
+/* ModalConfirmare.css */
+
+/* Stilizare pentru butonul de confirmare */
+.confirm-btn {
+  background-color: #dc3545; /* culoare roșie pentru butonul de confirmare */
+}
+
+/* Stilizare pentru butonul de anulare */
+.cancel-btn {
+  background-color: #6c757d; /* culoare gri închis pentru butonul de anulare */
+}
+
+/* Stilizare pentru titlul modalului */
+.modal-title {
+  color: #dc3545; /* culoare roșie pentru titlu */
+}
+
+/* Stilizare pentru textul din corpul modalului */
+.modal-body p {
+  font-size: 16px; /* dimensiunea fontului pentru descriere */
+  color: #495057; /* culoare pentru text */
+}

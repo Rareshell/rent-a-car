@@ -2,12 +2,14 @@ import Header from "./components/Header/Header";
 import Sidebar from "./components/Sidebar";
 import Footer from "./components/Footer/Footer";
 import MainContent from "./components/MainContent";
+import CardComponent from "./components/Modal/CardComponent";
 
 import { useState, useEffect } from "react";
 import { fetchData } from "./api/cars-api";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
+import React from "react";
 
 function App() {
   const [cars, setCars] = useState([]);
@@ -58,6 +60,14 @@ function App() {
           onSelectItem={handleSelectItem}
           onAddNewCar={handleAddNewCar}
         />
+        {cars.map((car) => (
+          <CardComponent
+            key={car.id}
+            id={car.id}
+            name={car.name}
+            onDelete={handleDeleteItem}
+          />
+        ))}
       </div>
       <Footer />
     </div>
